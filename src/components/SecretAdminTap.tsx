@@ -23,7 +23,7 @@ export function SecretAdminTap() {
       aria-hidden="true"
       tabIndex={-1}
       onClick={handleTap}
-      className="fixed top-[60px] right-0 z-[9998] h-16 w-16 opacity-0"
+      className="fixed bottom-0 right-0 z-[9998] h-20 w-24 opacity-0"
     />
   );
 }

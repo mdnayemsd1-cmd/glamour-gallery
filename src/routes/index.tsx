@@ -6,6 +6,7 @@ import { PhotoCard } from "@/components/PhotoCard";
 import { PhotoModal } from "@/components/PhotoModal";
 import { SecretAdminTap } from "@/components/SecretAdminTap";
 import { ADSTERRA_AD_URL, GALLERY_EVENT, getImages } from "@/lib/gallery";
+import bgTexture from "@/assets/bg-texture.gif";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -47,6 +48,15 @@ function Index() {
 
   return (
     <div className="relative min-h-screen sgf-animated-bg overflow-x-hidden">
+      {/* GIF texture overlay */}
+      <div
+        className="pointer-events-none fixed inset-0 z-0 opacity-25 mix-blend-screen"
+        style={{
+          backgroundImage: `url(${bgTexture})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
       {/* Dark texture overlay */}
       <div
         className="pointer-events-none fixed inset-0 z-0 opacity-60"
