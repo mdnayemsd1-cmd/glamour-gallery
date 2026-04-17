@@ -1,6 +1,59 @@
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@900&display=swap");
+
+.sgf-logo {
+  font-family: "Great Vibes", "Playfair Display", cursive;
+  font-weight: 900;
+  background: linear-gradient(90deg, #ff66c4 0%, #c026d3 50%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 18px rgba(236, 72, 153, 0.65))
+    drop-shadow(0 0 4px rgba(192, 38, 211, 0.8));
+  letter-spacing: 0.02em;
+}
+
+.sgf-animated-bg {
+  background: linear-gradient(
+    135deg,
+    #1a0218,
+    #3d0a4d,
+    #6b0f7a,
+    #c026d3,
+    #ec4899,
+    #be123c,
+    #3d0a4d,
+    #1a0218
+  );
+  background-size: 400% 400%;
+  animation: sgf-gradient 22s ease infinite;
+}
+
+@keyframes sgf-gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.sgf-pulse {
+  animation: sgf-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes sgf-pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 40px rgba(236,72,153,0.7), inset 0 0 20px rgba(255,255,255,0.2); }
+  50% { transform: scale(1.06); box-shadow: 0 0 60px rgba(236,72,153,0.95), inset 0 0 28px rgba(255,255,255,0.35); }
+}
+
+.sgf-fade-in {
+  animation: sgf-fade-in 0.5s ease-out both;
+}
+
+@keyframes sgf-fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
 @custom-variant dark (&:is(.dark *));
 
