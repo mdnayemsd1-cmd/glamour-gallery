@@ -6,6 +6,7 @@ import { PhotoCard } from "@/components/PhotoCard";
 import { PhotoModal } from "@/components/PhotoModal";
 import { SecretAdminTap } from "@/components/SecretAdminTap";
 import { ADSTERRA_AD_URL, GALLERY_EVENT, getImages } from "@/lib/gallery";
+import bgTexture from "@/assets/bg-texture.gif";
 
 export const Route = createFileRoute("/")({
   head: () => ({
