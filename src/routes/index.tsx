@@ -48,6 +48,15 @@ function Index() {
 
   return (
     <div className="relative min-h-screen sgf-animated-bg overflow-x-hidden">
+      {/* GIF texture overlay */}
+      <div
+        className="pointer-events-none fixed inset-0 z-0 opacity-25 mix-blend-screen"
+        style={{
+          backgroundImage: `url(${bgTexture})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
       {/* Dark texture overlay */}
       <div
         className="pointer-events-none fixed inset-0 z-0 opacity-60"
