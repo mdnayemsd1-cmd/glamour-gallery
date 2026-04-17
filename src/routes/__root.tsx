@@ -37,6 +37,10 @@ export const Route = createRootRoute({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "SuperGirlfred" },
+      { name: "twitter:description", content: "SuperGirlfred — premium gallery" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4bfd9284-a0d7-4361-8c89-c71462907440/id-preview-e7920988--f747092c-fdee-41ff-89ae-72eb1b0bc533.lovable.app-1776445517012.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4bfd9284-a0d7-4361-8c89-c71462907440/id-preview-e7920988--f747092c-fdee-41ff-89ae-72eb1b0bc533.lovable.app-1776445517012.png" },
     ],
     links: [
       {
