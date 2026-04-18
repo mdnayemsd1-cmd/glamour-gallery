@@ -50,19 +50,19 @@ function Index() {
     <div className="relative min-h-screen sgf-animated-bg overflow-x-hidden">
       {/* GIF texture overlay */}
       <div
-        className="pointer-events-none fixed inset-0 z-0 opacity-25 mix-blend-screen"
+        className="pointer-events-none fixed inset-0 z-0 opacity-50 mix-blend-screen"
         style={{
           backgroundImage: `url(${bgTexture})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       />
-      {/* Dark texture overlay */}
+      {/* Soft dark vignette so photos still pop */}
       <div
-        className="pointer-events-none fixed inset-0 z-0 opacity-60"
+        className="pointer-events-none fixed inset-0 z-0 opacity-40"
         style={{
           background:
-            "radial-gradient(ellipse at top, rgba(0,0,0,0.4), rgba(0,0,0,0.85))",
+            "radial-gradient(ellipse at top, rgba(0,0,0,0.25), rgba(0,0,0,0.7))",
         }}
       />
 
